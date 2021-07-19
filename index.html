@@ -1,33 +1,285 @@
-
 <style>
-    p {
-        font-size: 80px;
+    .top-panel-items {
+        text-decoration: none;
+        color: rgba(0,0,0,0.87); 
+        align-self: center; 
+        padding: 15px 15px 15px 15px;
+        font-family: arial,sans-serif;
+        font-size: 13px;
+    }
+
+    .bottom-panel-text {
+        text-decoration: none;
+        color: #70757a; 
+        align-self: center; 
+        padding: 15px 15px 15px 15px;
+        font-family: arial,sans-serif;
+        font-size: 14px;
+    }
+
+    .bottom-panel-text:hover {
+        text-decoration: underline;
+    }
+
+    #country-text{
+        text-decoration: none;
+        font-size: 15px;
+    }
+
+    #offered-in-text{
+        font-family: arial,sans-serif;
+        color: #222;
+    }
+
+    #offered-in-link {
+        text-decoration: none;
+        font-family: arial,sans-serif;
+        color: #1a0dab;
+    }
+
+    #offered-in-link:hover {
+        text-decoration: underline;
+    }
+
+    .center-button:hover {
+        box-shadow: 0 1px 1px rgba(0,0,0,.1);
+        background-color: #f8f9fa;
+        border: 1px solid #dadce0;
+        color: #202124;
+    }
+
+    .center-button {
+        background-color: #f8f9fa;
+        border: 1px solid #f8f9fa;
+        border-radius: 4px;
+        color: #3c4043;
+        font-family: arial,sans-serif;
+        font-size: 14px;
+        margin: 11px 4px;
+        padding: 0 16px;
+        line-height: 27px;
+        height: 36px;
+        min-width: 54px;
+        text-align: center;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .text-form {
+        background: #fff;
+        display: flex;
+        border: 1px solid #dfe1e5;
+        box-shadow: none;
+        border-radius: 24px;
+        z-index: 3;
+        height: 44px;
+        margin: 0 auto;
+        width: 584px;
+        font-size: 14px;
+        font-family: arial,sans-serif;
+        color: #222;
+    }
+
+    .google-icon {
+        width: 272px;
+        padding-bottom: 20px;
+        
     }
 </style>
 
+<html>
+<body style="display: flex; flex-direction: column; height: 100%">
 
+    <div style="width: 100%; height: 60px; display: flex; flex-direction: row-reverse;">
+        <a href="url" class="top-panel-items">
+            <img alt="Img2" src="images/googleAccount.png" style="height: 40px; width: 40px; border-radius: 100%;">
+        </a>
+
+        <a href="url" class="top-panel-items">
+            <img alt="Img1" src="images/googleApps.png">
+        </a>
+
+        <a href="url" class="top-panel-items">Images</a>
+        
+        <a href="url" class="top-panel-items">Gmail</a>
+    </div>
+
+    <div style="flex:auto; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+        <img src="images/googleIcon.png" alt="Google Icon" class="google-icon">
+
+        <form class="text-form">
+            <input type="text" class="text-form">
+        </form>
+
+        <div style="display: flex; flex-direction: row; padding-top: 20px;">
+            <button class="center-button">Google Search</button>
+            <button class="center-button">I'm Feeling Lucky</button>
+        </div>
+
+        <p id="offered-in-text">Google offered in: <a href="url" id="offered-in-link">Português (Portugal)</a></p>
+    </div>
+
+    <div style="background-color: #f2f2f2; width: 100%; height: 60px; display: flex; flex-direction: row;">
+        <p id="country-text" class="bottom-panel-text">Portugal</p>
+    </div>
+
+    <div style="display: flex; flex-direction: row; border-top: 1px solid; border-color: #dadce0">
+        <div style="background-color: #f2f2f2;; width: 50%; height: 60px; display: flex; flex-direction: row;">
+            <a href="url" class="bottom-panel-text">About</a>
+            <a href="url" class="bottom-panel-text">Advertising</a>
+            <a href="url" class="bottom-panel-text">Business</a>
+            <a href="url" class="bottom-panel-text">How Search Works</a>
+        </div>
+
+        <div style="background-color: #f2f2f2;; width: 50%; display: flex; flex-direction: row-reverse;">
+            <a href="url" class="bottom-panel-text">Settings</a>
+            <a href="url" class="bottom-panel-text">Terms</a>
+            <a href="url" class="bottom-panel-text">Privacy</a>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+<!---
+<style>
+    body {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+</style>
 
 <html>
+<body>
+
+    <div style="background-color: red; flex-grow: 100px;">
+        <div style="float: right;">
+            <a href="url">Gmail</a>
+
+        <a href="url">Images</a>
+    
+        <a href="url">
+            <img alt="Img1" src="images/googleApps.png"
+            width=100" height="100">
+        </a>
+
+        <a href="url">
+            <img alt="Img2" src="images/googleAccount.png"
+            width=100" height="100">
+        </a>
+        </div>
+    </div>
+
+    <div style="background-color: green; flex-grow: 1;">
+        <p>center</p>
+    </div>
+
+    <div style="background-color: purple;">
+        <p>Portugal</p>
+    </div>
+
+    <div style="background-color: blue; display: flex; flex-direction: row;"">
+
+        <div>
+            <p style="flex-grow: 1;"">Hello1</p>
+        </div>
+
+        <div>
+            <p style="flex-grow: 1; "">Goodbye1</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
+
+--->
 
 
+<!---
+
+
+
+<style>
+    .flex-container {
+        
+    }
+    .top-panel {
+        background-color: lightblue;
+        display: grid;
+        width: 100%;
+        grid-template-columns: auto auto auto auto;
+    }
+    .center-panel {
+        
+    }
+    .bottom-panel {
+
+    }
+</style>
+
+<!DOCTYPE html>
+<html>
 
 <body>
-    <p>
 
+    <div class="flex-container top-panel">
+        <a href="url">Gmail</a>
 
-        Hey bossmanonkljljkf
-    </p>
+        <a href="url">Images</a>
+    
+        <a href="url">
+            <img alt="Img1" src="images/googleApps.png"
+            width=100" height="100">
+        </a>
+
+        <a href="url">
+            <img alt="Img2" src="images/googleAccount.png"
+            width=100" height="100">
+        </a>
+    </div>
+
+    <div class="flex-container center-panel">
+        <img src="images/googleIcon.png" alt="Google Icon">
+        <form>
+            <input type="text">
+        </form>
+        <button>Google Search</button>
+        <button>I'm Feeling Lucky</button>
+        <p>
+            Google offered in: <a href="url">Português (Portugal)</a>
+        </p>
+    </div>
+
+    <div>
+        <p>Portugal</p>
+    </div>
+
+    <div class="flex-container bottom-panel">
+        <a href="url">About</a>
+        <a href="url">Advertising</a>
+        <a href="url">Business</a>
+        <a href="url">How Search works</a>
+
+        <a href="url">Privacy</a>
+        <a href="url">Terms</a>
+        <a href="url">Settings</a>
+    </div>
 
 </body>
 
 
-
-
-
-
-
-
-
-
-
 </html>
+
+
+
+
+
+
+-->
+
+
+
